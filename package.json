@@ -1,0 +1,51 @@
+{
+  "name": "fe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "install:ui": "cd packages/ui && npm install",
+    "install:common": "cd packages/common && npm install",
+    "install:generator": "cd packages/generator && npm install",
+    "install:schemas": "cd packages/schemas && npm install",
+    "install-all": "npm install && npm run install:common && npm run install:generator && npm run install:schemas && npm run install:ui "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@headlessui/react": "^2.1.9",
+    "@pdfme/common": "file:./packages/common/dist",
+    "@pdfme/generator": "file:./packages/generator/dist",
+    "@pdfme/schemas": "file:./packages/schemas/dist",
+    "@pdfme/ui": "file:./packages/ui/dist",
+    "alertifyjs": "^1.14.0",
+    "axios": "^1.7.5",
+    "next": "^14.2.5",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^4.5.136",
+    "quill": "^2.0.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-qr-code": "^2.0.15",
+    "react-quill": "^2.0.0",
+    "signature_pad": "^4.1.6",
+    "xlsx": "^0.18.5",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/next": "^9.0.0",
+    "@types/node": "22.2.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.2.7",
+    "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.0.0",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.9",
+    "typescript": "5.5.4"
+  }
+}

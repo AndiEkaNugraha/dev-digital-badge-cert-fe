@@ -1,0 +1,10 @@
+services:
+  digital-certificate-be-dev:
+    image: itprasmuleli/dbc-fe-v1:latest
+    container_name: digital-certificate-fe-dev
+    ports:
+      - "4000:3000"
+    environment:
+      NEXT_PUBLIC_API_URL: "https://dbc-dev.prasmul-eli.co/api"
+      # NEXT_PUBLIC_API_URL: "http://localhost:3003/api/"
+      # NEXT_PUBLIC_API_URL: "http://8.215.36.119:3003/api/"

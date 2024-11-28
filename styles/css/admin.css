@@ -1,0 +1,351 @@
+.bg-gradient-sidebar {
+  background: linear-gradient(
+    to right,
+    #f0f9ff,  /* from-sky-50 */
+    #e0f2fe 20%, /* via-sky-200 */
+    #bae6fd 50%, /* via-sky-400 */
+    #99e6dd 80%,
+    #a6e9e1 97%, /* via-emerald-200 */
+    #34d399 97%  /* to-emerald-300 */
+  );
+}
+
+
+#sidebar {
+  transition: .7s cubic-bezier(0.68, 0.2, 0.26, 1.65);
+  width: 65px;
+  height: 100vh;
+}
+
+
+#sidebar.show  {
+   transform: translateX(0);
+   transition: 0.2s ease-in-out;
+   width: 250px;
+}
+#sidebar__logo.show {
+  transition: 0.2s ease-in-out;
+  transform: translateX(53px);
+}
+#sidebar__logo {
+  transition: .7s cubic-bezier(0.68, 0.2, 0.26, 1.65);
+  transform: translateX(-72px);
+}
+#sidebar__button  {
+   left: 50px;
+   transition: .7s cubic-bezier(0.68, 0.2, 0.26, 1.65);
+}
+#sidebar__button.show {
+   transform: translateX(0%);
+   transition: 0.2s ease-in-out;
+   left: 239px;
+}
+#sidebar__button #line1, #sidebar__button #line2 {
+   transform-origin: center;
+   transform-box: fill-box;
+   transition: 0.5s ease;
+}
+#sidebar__button.show #line1 {
+   transform: rotateZ(110deg)translateY(50%)translateX(15%);
+   transition:.5s ease;
+}
+#sidebar__button.show #line2 {
+   transform: rotateZ(-110deg)translateY(-50%)translateX(15%);
+   transition: .5s ease;
+}
+@keyframes animate-svg-log-out-1 {
+  0% {
+    stroke-dasharray: 343.698974609375px;
+  }
+  100% {
+    stroke-dasharray: 0px;
+    stroke: url(#gradient1)
+  }
+}
+@keyframes animate-svg-log-out-2 {
+  0% {
+    stroke-dasharray: 0px;
+    stroke: url(#gradient1)
+  }
+  100% {
+    stroke-dasharray: 343.698974609375px;
+  }
+}
+.sidebar__icon:hover svg#log-out #vector {
+  animation: animate-svg-log-out-1 .2s cubic-bezier(1, 1, 1, 1) both;
+}
+.sidebar__icon svg#log-out #vector {
+  animation: animate-svg-log-out-2 .5s cubic-bezier(1, 0, 0, 1) both;
+}
+
+@keyframes animate-svg-participant-1-in {
+  0% {
+    stroke-dasharray: 143.12875366210938px;
+  }
+  100% {
+    stroke-dasharray: 0px;
+    stroke: url(#gradient1)
+  }
+}
+@keyframes animate-svg-participant-1-out {
+  0% {
+    stroke-dasharray: 0px;
+    stroke: url(#gradient1)
+  }
+  100% {
+    stroke-dasharray: 143.12875366210938px;
+  }
+}
+.sidebar__icon:hover svg#participant #vector4,.sidebar__icon.active svg#participant #vector4 {
+  animation: animate-svg-participant-1-in .3s cubic-bezier(1,1,1,1) 0s both;
+}
+.sidebar__icon svg#participant #vector4 {
+  animation: animate-svg-participant-1-out .3s cubic-bezier(1,1,1,1) 0s both;
+}
+@keyframes animate-svg-participant-2-in {
+  0% {
+    stroke-dasharray: 175.53135681152344px;
+  }
+  100% {
+    stroke-dasharray: 0px;
+    stroke: url(#gradient1)
+  }
+}
+@keyframes animate-svg-participant-2-out {
+  0% {
+    stroke-dasharray: 0px;
+    stroke: url(#gradient1)
+  }
+  100% {
+    stroke-dasharray: 175.53135681152344px;
+  }
+}
+.sidebar__icon:hover svg#participant #vector3, .sidebar__icon.active svg#participant #vector3 {
+  animation: animate-svg-participant-2-in .3s cubic-bezier(1,1,1,1) 0.12s both;
+}
+.sidebar__icon svg#participant #vector3 {
+  animation: animate-svg-participant-2-out .3s cubic-bezier(1,1,1,1) 0.12s both;
+}
+@keyframes animate-svg-participant-3-in {
+  0% {
+    stroke-dasharray: 30.09942626953125px;
+  }
+  100% {
+    stroke-dasharray: 0px;
+    stroke: url(#gradient1)
+  }
+}
+@keyframes animate-svg-participant-3-out {
+  0% {
+    stroke-dasharray: 0px;
+    stroke: url(#gradient1)
+  }
+  100% {
+    stroke-dasharray: 30.09942626953125px;
+  }
+}
+.sidebar__icon:hover svg#participant #vector2,.sidebar__icon.active svg#participant #vector2 {
+  animation: animate-svg-participant-3-in .3s cubic-bezier(1,1,1,1) 0.24s both;
+}
+.sidebar__icon svg#participant #vector2 {
+  animation: animate-svg-participant-3-out .3s cubic-bezier(1,1,1,1) 0.24s both;
+}
+@keyframes animate-svg-participant-4-in {
+  0% {
+    stroke-dasharray: 79.1990737915039px;
+  }
+  100% {
+    stroke-dasharray: 0px;
+    stroke: url(#gradient1)
+  }
+}@keyframes animate-svg-participant-4-out {
+  0% {
+    stroke-dasharray: 0px;
+    stroke: url(#gradient1)
+  }
+  100% {
+    stroke-dasharray: 79.1990737915039px;
+  }
+}
+.sidebar__icon:hover svg#participant #vector1,.sidebar__icon.active svg#participant #vector1 {
+  animation: animate-svg-participant-4-in .3s cubic-bezier(1,1,1,1) 0.36s both;
+}
+.sidebar__icon svg#participant #vector1 {
+  animation: animate-svg-participant-4-out .3s cubic-bezier(1,1,1,1) 0.36s both;
+}
+
+@keyframes animate-svg-program-1-in {
+  0% {
+    stroke-dasharray: 530.7092895507812px;
+  }
+  100% {
+    stroke-dasharray: 0px;
+    stroke: url(#gradient1)
+  }
+}
+@keyframes animate-svg-program-1-out {
+  0% {
+    stroke-dasharray: 0px;
+    stroke: url(#gradient1)
+  }
+  100% {
+    stroke-dasharray: 530.7092895507812px;
+  }
+}
+.sidebar__icon:hover svg#program #vector,.sidebar__icon.active svg#program #vector {
+  animation: animate-svg-program-1-in 0.6s cubic-bezier(1, 0, 0, 1) 0s both;
+}
+.sidebar__icon svg#program #vector {
+  animation: animate-svg-program-1-out 0.5s cubic-bezier(1, 0, 0, 1) 0.4s both;
+}
+
+@keyframes animate-svg-asset-1-in {
+  0% {
+    stroke-dasharray: 278.6424560546875px;
+  }
+
+  100% {
+    stroke-dasharray: 0px;
+    stroke: url(#gradient1)
+  }
+}
+@keyframes animate-svg-asset-1-out {
+  0% {
+    stroke-dasharray: 0px;
+    stroke: url(#gradient1)
+  }
+
+  100% { 
+    stroke-dasharray: 278.6424560546875px;
+  }
+}
+.sidebar__icon:hover svg#asset #Vector3, .sidebar__icon.active svg#asset #Vector3 {
+  animation: animate-svg-asset-1-in .5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
+}
+.sidebar__icon svg#asset #Vector3 {
+  animation: animate-svg-asset-1-out .5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
+}
+@keyframes animate-svg-asset-2-in {
+  0% {
+    stroke-dasharray: 205.52328491210938px;
+  }
+
+  100% {
+    stroke-dasharray: 0px;
+    stroke: url(#gradient1)
+  }
+}
+@keyframes animate-svg-asset-2-out {
+  0% {
+    stroke-dasharray: 0px;
+    stroke: url(#gradient1)
+  }
+  100% {
+    stroke-dasharray: 205.52328491210938px;
+  }
+}
+.sidebar__icon:hover svg#asset #Vector2, .sidebar__icon.active svg#asset #Vector2 {
+  animation: animate-svg-asset-2-in .5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
+}
+.sidebar__icon svg#asset #Vector2 {
+  animation: animate-svg-asset-2-out .5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
+}
+@keyframes animate-svg-asset-3-in {
+  0% {
+    stroke-dasharray: 127.26569366455078px;
+  }
+  100% {
+    stroke-dasharray: 0px;
+    stroke: url(#gradient1)
+  }
+}
+@keyframes animate-svg-asset-3-out {
+  0% {
+    stroke-dasharray: 0px;
+    stroke: url(#gradient1)
+  }
+  100% {
+    stroke-dasharray: 127.26569366455078px;
+  }
+}
+.sidebar__icon:hover svg#asset #Vector1,.sidebar__icon.active svg#asset #Vector1 {
+  animation: animate-svg-asset-3-in .5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
+} 
+.sidebar__icon svg#asset #Vector1 {
+  animation: animate-svg-asset-3-out .5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
+}
+
+@keyframes animate-svg-dashboard-1-in {
+  0% {
+    stroke-dasharray: 255.51002502441406px;
+  }
+
+  100% {
+    stroke-dasharray: 0px;
+    stroke: url(#gradient1)
+  }
+}
+@keyframes animate-svg-dashboard-1-out {
+  0% {
+    stroke-dasharray: 0px;
+    stroke: url(#gradient1)
+  }
+
+  100% {
+    stroke-dasharray: 255.51002502441406px;
+  }
+}
+.sidebar__icon:hover svg#dashboard #Vector2, .sidebar__icon.active svg#dashboard #Vector2 {
+  animation: animate-svg-dashboard-1-in .5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
+}
+.sidebar__icon svg#dashboard #Vector2 {
+  animation: animate-svg-dashboard-1-out .5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
+}
+@keyframes animate-svg-dashboard-2-in {
+  0% {
+    stroke-dasharray: 184.14779663085938px;
+  }
+
+  100% {
+    stroke-dasharray: 0px;
+    stroke: url(#gradient1)
+  }
+}
+@keyframes animate-svg-dashboard-2-out {
+  0% {
+    stroke-dasharray: 0px;
+    stroke: url(#gradient1)
+  }
+  100% {
+    stroke-dasharray: 184.14779663085938px;
+  }
+}
+.sidebar__icon:hover svg#dashboard #Vector1, .sidebar__icon.active svg#dashboard #Vector1 {
+  animation: animate-svg-dashboard-2-in .5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s both;
+}
+.sidebar__icon svg#dashboard #Vector1 {
+  animation: animate-svg-dashboard-2-out .5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s both;
+}
+
+.detail svg.SVGWarning .Vector_3{
+  transition: all 0.3s ease-in-out;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+.detail:hover svg.SVGWarning .Vector_3{
+  transform: rotate(270deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.detail .detail-content{
+  display: none;
+  transition: all 0.5s ease-in-out;
+}
+.detail:hover .detail-content{
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+.detail:focus .detail-content{
+  display: block;
+  transition: all 0.5s ease-in-out;
+}

@@ -1,0 +1,55 @@
+.bg-gradient-sidebar {
+   background: linear-gradient(
+     to right,
+     #f0f9ff,  /* from-sky-50 */
+     #e0f2fe 20%, /* via-sky-200 */
+     #bae6fd 50%, /* via-sky-400 */
+     #99e6dd 80%,
+     #a6e9e1 97%, /* via-emerald-200 */
+     #34d399 97%  /* to-emerald-300 */
+   );
+ }
+ 
+ 
+ #sidebar {
+   transition: .7s cubic-bezier(0.68, 0.2, 0.26, 1.65);
+   width: 65px;
+   height: 100vh;
+ }
+ 
+ 
+ #sidebar.show  {
+    transform: translateX(0);
+    transition: 0.2s ease-in-out;
+    width: 250px;
+ }
+ #sidebar__logo.show {
+   transition: 0.2s ease-in-out;
+   transform: translateX(53px);
+ }
+ #sidebar__logo {
+   transition: .7s cubic-bezier(0.68, 0.2, 0.26, 1.65);
+   transform: translateX(-72px);
+ }
+ #sidebar__button  {
+    left: 50px;
+    transition: .7s cubic-bezier(0.68, 0.2, 0.26, 1.65);
+ }
+ #sidebar__button.show {
+    transform: translateX(0%);
+    transition: 0.2s ease-in-out;
+    left: 239px;
+ }
+ #sidebar__button #line1, #sidebar__button #line2 {
+    transform-origin: center;
+    transform-box: fill-box;
+    transition: 0.5s ease;
+ }
+ #sidebar__button.show #line1 {
+    transform: rotateZ(110deg)translateY(50%)translateX(15%);
+    transition:.5s ease;
+ }
+ #sidebar__button.show #line2 {
+    transform: rotateZ(-110deg)translateY(-50%)translateX(15%);
+    transition: .5s ease;
+ }
